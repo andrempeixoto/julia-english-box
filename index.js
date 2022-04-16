@@ -1,67 +1,61 @@
-function playOne() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/01.mp3');
+const playAudio = (audioPath) => {
+  const audio = new Audio(audioPath);
   audio.play();
-}
+};
 
-function playTwo() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/02.mp3');
-  audio.play();
-}
+const playOne = () => {
+  playAudio('../media/01.mp3');
+};
 
-function playThree() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/03.mp3');
-  audio.play();
-}
+const playTwo = () => {
+  playAudio('../media/02.mp3');
+};
 
-function playFour() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/04.mp3');
-  audio.play();
-}
+const playThree = () => {
+  playAudio('../media/03.mp3');
+};
 
-function playFive() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/05.mp3');
-  audio.play();
-}
+const playFour = () => {
+  playAudio('../media/04.mp3');
+};
 
-function playSix() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/06.mp3');
-  audio.play();
-}
+const playFive = () => {
+  playAudio('../media/05.mp3');
+};
 
-function playSeven() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/07.mp3');
-  audio.play();
-}
+const playSix = () => {
+  playAudio('../media/06.mp3');
+};
 
-function playEight() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/08.mp3');
-  audio.play();
-}
+const playSeven = () => {
+  playAudio('../media/07.mp3');
+};
 
-function playNine() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/09.mp3');
-  audio.play();
-}
+const playEight = () => {
+  playAudio('../media/08.mp3');
+};
 
-function playTen() {
-  var audio = new Audio('https://peixotodev.com/julia-english-box/media/10.mp3');
-  audio.play();
-}
+const playNine = () => {
+  playAudio('../media/09.mp3');
+};
 
-var animateButton = function(e) {
+const playTen = () => {
+  playAudio('../media/10.mp3');
+};
 
+const animateButton = function (e) {
   e.preventDefault;
   //reset animation
   e.target.classList.remove('animate');
-  
+
   e.target.classList.add('animate');
-  setTimeout(function(){
+  setTimeout(function () {
     e.target.classList.remove('animate');
-  },700);
+  }, 700);
 };
 
-var bubblyButtons = document.getElementsByClassName("bubbly-button");
+const bubblyButtons = document.getElementsByClassName('bubbly-button');
 
-for (var i = 0; i < bubblyButtons.length; i++) {
+for (let i = 0; i < bubblyButtons.length; i++) {
   bubblyButtons[i].addEventListener('click', animateButton, false);
 }
