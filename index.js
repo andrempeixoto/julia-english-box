@@ -1,46 +1,6 @@
-const playAudio = (audioPath) => {
-  const audio = new Audio(audioPath);
+const playAudio = (audioFile) => {
+  const audio = new Audio(`../julia-english-box/media/${audioFile}`);
   audio.play();
-};
-
-const playOne = () => {
-  playAudio('../julia-english-box/media/01.mp3');
-};
-
-const playTwo = () => {
-  playAudio('../julia-english-box/media/02.mp3');
-};
-
-const playThree = () => {
-  playAudio('../julia-english-box/media/03.mp3');
-};
-
-const playFour = () => {
-  playAudio('../julia-english-box/media/04.mp3');
-};
-
-const playFive = () => {
-  playAudio('../julia-english-box/media/05.mp3');
-};
-
-const playSix = () => {
-  playAudio('../julia-english-box/media/06.mp3');
-};
-
-const playSeven = () => {
-  playAudio('../julia-english-box/media/07.mp3');
-};
-
-const playEight = () => {
-  playAudio('../julia-english-box/media/08.mp3');
-};
-
-const playNine = () => {
-  playAudio('../julia-english-box/media/09.mp3');
-};
-
-const playTen = () => {
-  playAudio('../julia-english-box/media/10.mp3');
 };
 
 const animateButton = function (e) {
