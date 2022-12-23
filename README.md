@@ -4,7 +4,7 @@ This is a simple webapp game created for my daughter (3 y.o.) that is currently 
 
 Her requirements for styling were strictly followed.
 
-The game is hosted at [peixotodev.com/julia-english-box](https://peixotodev.com/julia-english-box). We encourage it's use, specially by toddlers.
+The game is hosted at [andrempeixoto.github.io/julia-english-box/](https://andrempeixoto.github.io/julia-english-box). We encourage it's use, specially by toddlers.
 
 The project includes future implementations such as "animals", "colors", "objects" and further content.
 
